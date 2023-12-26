@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+            color:red;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #mian{
+            background-color: antiquewhite;
+            color:red;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            color:red
+        }
+        input{
+            height:20px;
+        }
+        button{
+            width:100px;
+        }
+        
+            
+        
+    </style>
+</head>
+<body><div id='boxx'><h1>FLAMESSSSS</h1>
+    <div><input type='text' id="o"></div>
+    <div><input type='text' id="t"></div>
+    <button onclick="tell()">TELL</button>
+    
+</div>
+<h2 id="'mian"></h2>
+</body>
+<script>
+    function tell(){
+        var s='FLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMESFLAMES';
+        var i=''
+        let o=document.getElementById("o").value;
+        let t=document.getElementById("t").value;
+        let mian=document.getElementById("'mian");
+        let countt=0
+        for(let char of o){
+            if(!t.includes(char)){
+                i=i+char;
+            }
+        }
+        for(let char of t){
+            if(!o.includes(char)){
+                i=i+char;
+            }
+        }
+        for(let char of i){
+            countt+=1
+
+        }
+        let n=s[countt-1];
+        if(n=='F'){
+            mian.innerText='FRIENDS';
+
+
+        }
+        if(n=='L'){
+            mian.innerText='LOVERS';
+        }
+        if(n=='A'){
+            mian.innerText='AFFECTION';
+        }
+        if(n=='M'){
+            mian.innerText='MARRIAGE';
+        }
+        if(n=='E'){
+            mian.innerText='ENEMIES';
+        }
+        if(n=='S'){
+            mian.innerText='SIBLINGS';
+        }
+       
+    }
+    
+
+</script>
+</html>
